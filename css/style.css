@@ -679,6 +679,27 @@ section {
     FILTER
 ====================================================== */
 
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 350px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #ff8fab;
+    box-shadow: 0 0 10px rgba(255,143,171,0.3);
+}
+
 .filters {
 
     display: flex;

@@ -66,6 +66,82 @@ function orderProduct(productName, packageName, price) {
    FILTER CATALOGUE
 ===================================================== */
 
+function searchProduct(){
+
+    let input = document
+        .getElementById("searchProduct")
+        .value
+        .toLowerCase()
+        .trim();
+
+    let products = document.querySelectorAll(".product-card");
+    let categories = document.querySelectorAll(".catalogue-category");
+    let filters = document.querySelector(".filters");
+
+    // jika search kosong, tampilkan normal kembali
+    if(input === ""){
+
+        filters.style.display = "flex";
+
+        categories.forEach(category=>{
+            category.style.display = "block";
+        });
+
+        products.forEach(product=>{
+            product.style.display = "block";
+        });
+
+        return;
+    }
+
+
+    // sembunyikan filter saat searching
+    filters.style.display = "none";
+
+
+    let found = false;
+
+    products.forEach(product=>{
+
+        let name = product
+            .querySelector("h4")
+            .innerText
+            .toLowerCase();
+
+
+        if(name.includes(input)){
+
+            product.style.display = "block";
+            found = true;
+
+        }else{
+
+            product.style.display = "none";
+
+        }
+
+    });
+
+
+    // sembunyikan kategori kosong
+    categories.forEach(category=>{
+
+        let visibleProduct = category.querySelectorAll(
+            ".product-card[style='display: block;']"
+        );
+
+
+        if(visibleProduct.length > 0){
+            category.style.display = "block";
+        }
+        else{
+            category.style.display = "none";
+        }
+
+    });
+
+}
+
 function filterProducts(
     category,
     button
