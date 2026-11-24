@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoftHaven — Publikasi Jurnal</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS EXISTING -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            Toko <span>SoftHaven</span> ♡
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalogue">Katalog</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </div>
+
+    </nav>
+
+
+    <!-- DECORATION -->
+    <div class="decor cloud one">☁️ Research Time!</div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✦ Publikasi Akademik ✦
+            </div>
+
+            <h1>
+                Toko
+                <br>
+                <span>SoftHaven!</span>
+            </h1>
+
+            <p>
+                Temukan layanan publikasi jurnal ilmiah sesuai
+                kebutuhan penelitianmu. Tersedia pilihan jurnal
+                Non-Sinta, Sinta 5, hingga Sinta 4 dengan pilihan
+                layanan normal dan fast track.
+                Yuk, konsultasikan kebutuhan publikasi artikelmu!
+            </p>
+
+            <div class="buttons">
+
+                <a href="#catalogue" class="btn btn-primary">
+                    📚 Jelajahi Katalog
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    💌 Hubungi Kami
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-card">
+
+                <div class="heart">♡</div>
+
+                <h2>
+                    Toko
+                    <br>
+                    <span>SoftHaven</span>
+                </h2>
+
+                <p>
+                    Your Research,
+                    <br>
+                    Your Publication,
+                    <br>
+                    Your Achievement!
+                </p>
+
+                <br>
+
+                <small>
+                    ✦ Research • Journal • Publication ✦
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATALOGUE -->
+    <section id="catalogue">
+
+        <div class="section-title">
+
+            <span class="section-tag">
+                ✦ LAYANAN KAMI ✦
+            </span>
+
+            <h2>
+                Pilih Jurnalmu! 📚
+            </h2>
+
+            <p>
+                Pilih kategori jurnal dan jenis layanan publikasi
+                sesuai kebutuhan artikel ilmiahmu.
+                Tersedia beberapa pilihan dengan harga transparan.
+            </p>
+
+        </div>
+
+
+        <!-- JOURNAL SHOWCASE -->
+        <div class="app-showcase">
+
+            <div class="app-bubble">
+                <span style="font-size:35px;">📖</span>
+                <small>Penelitian</small>
+            </div>
+
+            <div class="app-bubble">
+                <span style="font-size:35px;">📚</span>
+                <small>Jurnal</small>
+            </div>
+
+            <div class="app-bubble">
+                <span style="font-size:35px;">🎓</span>
+                <small>Akademik</small>
+            </div>
+
+            <div class="app-bubble">
+                <span style="font-size:35px;">✍️</span>
+                <small>Penulisan</small>
+            </div>
+
+        </div>
+
+
+        <div class="category-title">
+            <span>📚</span>
+            <h3>Pilihan Jurnal</h3>
+            <div class="category-line"></div>
+        </div>
+
+        <div class="products">
+
+            <!-- NON SINTA -->
+            <div class="product-card">
+                <div style="font-size: 38px;" class="product-logo">📄</div>
+                <h4>Non-Sinta</h4>
+                <p>Layanan publikasi artikel ilmiah pada jurnal yang tidak terakreditasi Sinta.</p>
+
+                <div class="product-plans">
+                    <div class="plan-item">
+                        <div>
+                            <strong>Normal</strong>
+                            <small>Non-Sinta</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp250.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Non-Sinta','Normal','Rp250.000')">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SINTA 5 -->
+            <div class="product-card">
+                <div style="font-size: 38px;" class="product-logo">📚</div>
+                <h4>Sinta 5</h4>
+                <p>Layanan publikasi artikel ilmiah pada jurnal terakreditasi Sinta 5.</p>
+
+                <div class="product-plans">
+                    <div class="plan-item">
+                        <div>
+                            <strong>Normal</strong>
+                            <small>Sinta 5</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp550.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Sinta 5','Normal','Rp550.000')">Order</button>
+                        </div>
+                    </div>
+
+                    <div class="plan-item">
+                        <div>
+                            <strong>Fast Track</strong>
+                            <small>Sinta 5</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp700.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Sinta 5','Fast Track','Rp700.000')">Order</button>
+                        </div>
+                    </div>
+
+                    <div class="plan-item">
+                        <div>
+                            <strong>Super Fast Track</strong>
+                            <small>Sinta 5</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp1.000.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Sinta 5','Super Fast Track','Rp1.000.000')">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SINTA 4 -->
+            <div class="product-card">
+                <div style="font-size: 38px;" class="product-logo">📑</div>
+                <h4>Sinta 4</h4>
+                <p>Layanan publikasi artikel ilmiah pada jurnal terakreditasi Sinta 4.</p>
+
+                <div class="product-plans">
+                    <div class="plan-item">
+                        <div>
+                            <strong>Normal</strong>
+                            <small>Sinta 4</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp850.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Sinta 4','Normal','Rp850.000')">Order</button>
+                        </div>
+                    </div>
+
+                    <div class="plan-item">
+                        <div>
+                            <strong>Fast Track</strong>
+                            <small>Sinta 4</small>
+                        </div>
+                        <div class="plan-action">
+                            <span class="price">Rp950.000</span>
+                            <button class="order-btn" onclick="orderProduct('Jurnal Sinta 4','Fast Track','Rp950.000')">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+    <section class="why" id="why">
+
+        <div class="section-title">
+
+            <span class="section-tag">
+                ✦ LAYANAN TERBAIK ✦
+            </span>
+
+            <h2>
+                Mengapa Toko SoftHaven? ♡
+            </h2>
+
+            <p>
+                Kami menyediakan informasi layanan publikasi
+                dengan proses konsultasi yang jelas dan transparan.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">💰</div>
+
+                <h3>Harga Terjangkau</h3>
+
+                <p>
+                    Pilihan harga layanan sesuai kategori jurnal.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">📚</div>
+
+                <h3>Opsi Jurnal</h3>
+
+                <p>
+                    Tersedia pilihan Non-Sinta, Sinta 5,
+                    dan Sinta 4.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">💬</div>
+
+                <h3>Konsultasi Mudah</h3>
+
+                <p>
+                    Konsultasikan kebutuhan publikasi
+                    dengan mudah.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🤝</div>
+
+                <h3>Transparan</h3>
+
+                <p>
+                    Informasi harga dan ketentuan layanan
+                    disampaikan secara jelas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CTA -->
+    <div class="cta" id="contact">
+
+        <h2>
+            Siap untuk Publikasi? ♡
+        </h2>
+
+        <p>
+            Punya artikel ilmiah yang ingin dipublikasikan?
+            Yuk, konsultasikan kebutuhan jurnalmu bersama
+            Toko SoftHaven!
+        </p>
+
+        <a href="javascript:void(0)"
+            class="instagram-btn"
+            onclick="contactUs()">
+
+            💌 Kontak Toko SoftHaven
+
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            Toko SoftHaven ♡
+        </div>
+
+        <p>
+            Penelitian Anda Layak untuk Dipublikasikan.
+            <br>
+            Bersama Kami.
+        </p>
+
+        <div class="copyright">
+            © 2026 Toko SoftHaven. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        Order berhasil dipilih!
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
